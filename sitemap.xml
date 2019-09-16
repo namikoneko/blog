@@ -2,29 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://namikoneko.github.io/blog/posts/test/</loc>
+    <loc>https://namikoneko.github.io/blog2/posts/test/</loc>
     <lastmod>2019-09-16T22:45:56+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://namikoneko.github.io/blog/tags/</loc>
-    <lastmod>2019-09-16T22:45:56+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://namikoneko.github.io/blog/posts/</loc>
+    <loc>https://namikoneko.github.io/blog2/tags/</loc>
     <lastmod>2019-09-16T22:45:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://namikoneko.github.io/blog/tags/</loc>
+    <loc>https://namikoneko.github.io/blog2/posts/</loc>
+    <lastmod>2019-09-16T22:45:56+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://namikoneko.github.io/blog/</loc>
+    <loc>https://namikoneko.github.io/blog2/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://namikoneko.github.io/blog2/</loc>
     <lastmod>2019-09-16T22:45:56+09:00</lastmod>
     <priority>0</priority>
   </url>
