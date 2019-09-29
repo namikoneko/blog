@@ -7,8 +7,36 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>yaguchi All rights reserved.</copyright>
-    <lastBuildDate>Mon, 16 Sep 2019 22:45:56 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 29 Sep 2019 12:15:41 +0900</lastBuildDate>
     <atom:link href="https://namikoneko.github.io/blog2/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>git備忘</title>
+      <link>https://namikoneko.github.io/blog2/posts/git/</link>
+      <pubDate>Sun, 29 Sep 2019 12:15:41 +0900</pubDate>
+      
+      <guid>https://namikoneko.github.io/blog2/posts/git/</guid>
+      <description>&lt;p&gt;git checkout id&lt;br /&gt;
+作業ディレクトリの内容を過去のものに変更できる&lt;/p&gt;
+
+&lt;p&gt;git checkout master&lt;br /&gt;
+最後は，HEADをmasterに戻す&lt;br /&gt;
+そうしないとdetached HEADと言われる&lt;/p&gt;
+
+&lt;p&gt;git add .&lt;br /&gt;
+git commit &amp;ndash;amend&lt;br /&gt;
+commit後に小さな変更をして，commitを修正したいとき&lt;/p&gt;
+
+&lt;p&gt;git commit &amp;ndash;amend &amp;ndash;no-edit&lt;br /&gt;
+エディタが開かない&lt;/p&gt;
+
+&lt;p&gt;git commit &amp;ndash;amend -m &amp;ldquo;fugafuga&amp;rdquo;&lt;br /&gt;
+commitメッセージの修正&lt;/p&gt;
+
+&lt;p&gt;git pull&lt;br /&gt;
+変更ないのにpullしても，メッセージが出るだけなので，常にpullしておけばよい&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>テスト</title>
