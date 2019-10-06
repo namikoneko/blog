@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+   google_ad_client: "ca-pub-3425494723512984",
+   enable_page_level_ads: true
+   });
+</script>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.19" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="https://namikoneko.github.io/blog2/css/normalize.css">
+<link rel="stylesheet" href="https://namikoneko.github.io/blog2/css/skeleton.css">
+<link rel="stylesheet" href="https://namikoneko.github.io/blog2/css/custom.css">
+<link rel="alternate" href="https://namikoneko.github.io/blog2/index.xml" type="application/rss+xml" title="ある法律事務所のIT担当者の日記">
+<title>heroku備忘 - ある法律事務所のIT担当者の日記</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="https://namikoneko.github.io/blog2/"><img src="https://namikoneko.github.io/blog2/images/logo.jpg" width="60" height="60" alt="ある法律事務所のIT担当者の日記"></a>
+		</div>
+		<a href="https://namikoneko.github.io/blog2/"><h1 class="site-title">ある法律事務所のIT担当者の日記</h1></a>
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">heroku備忘</h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2019-10-06">October 06, 2019</time></span>
+			<section itemprop="entry-text">
+				<p>【Python】PythonプログラムをHerokuにデプロイする方法 - Qiita<br />
+<a href="https://qiita.com/1-row/items/80f89c8ada2e61f04446">https://qiita.com/1-row/items/80f89c8ada2e61f04446</a></p>
+
+<p>公式チュートリアル<br />
+<a href="https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app">https://devcenter.heroku.com/articles/getting-started-with-python#deploy-the-app</a></p>
+
+<p>flaskの場合</p>
+
+<p>仮想環境を作成<br />
+python3 -m venv myproject<br />
+cd myproject<br />
+pipでflaskとgunicornをinstall<br />
+最低限のapp.pyを作成<br />
+git init<br />
+git add .<br />
+git commit -m&rdquo;1st commit&rdquo;<br />
+heroku create &ldquo;myapp191006&rdquo;（リモートの紐づけもされる）<br />
+git push heroku master<br />
+heroku open</p>
+
+<p>アプリをコマンドで削除する場合<br />
+heroku apps:destroy &ndash;app (app name)</p>
+
+<p>datasetをpip installするときは，psycopg2もpip installする。<br />
+そうしないとエラーになる。</p>
+
+<p><code>heroku pg:psql</code>で，そのディレクトリに紐付いたアプリに紐付いたデータベースに接続できる</p>
+
+<p>sql文は，大文字でなければダメらしい</p>
+
+<p>heroku pg:psql コマンドで接続できる。</p>
+
+<p>公式サイトによると，以下で，ユーザーパスワードなどの接続情報が取得できる
+<a href="https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-python">https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-python</a></p>
+
+<pre><code>import os
+DATABASE_URL = os.environ['DATABASE_URL']
+</code></pre>
+
+			</section>
+		</article>
+	</main>
+
+<a href="https://ssl.form-mailer.jp/fms/66b9ce49524954">こちらからブログ主へコメント（メール）できます。</a>
+
+<script>
+  (function() {
+    var cx = '011490956161845048880:zpexlubie9i';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<script async src="https://cse.google.com/cse.js?cx=011490956161845048880:dcc892zqnww"></script>
+<div class="gcse-search"></div>
+
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			
+			
+			<a href="https://github.com/namikoneko/" target="_blank">GitHub</a>
+		</div>
+		<div class="copyright">Copyright &copy; yaguchi All rights reserved.</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+

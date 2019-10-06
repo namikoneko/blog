@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+   google_ad_client: "ca-pub-3425494723512984",
+   enable_page_level_ads: true
+   });
+</script>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.19" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="//fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="https://namikoneko.github.io/blog2/css/normalize.css">
+<link rel="stylesheet" href="https://namikoneko.github.io/blog2/css/skeleton.css">
+<link rel="stylesheet" href="https://namikoneko.github.io/blog2/css/custom.css">
+<link rel="alternate" href="https://namikoneko.github.io/blog2/index.xml" type="application/rss+xml" title="ある法律事務所のIT担当者の日記">
+<title>postgresql備忘 - ある法律事務所のIT担当者の日記</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		<div class="header-logo">
+			<a href="https://namikoneko.github.io/blog2/"><img src="https://namikoneko.github.io/blog2/images/logo.jpg" width="60" height="60" alt="ある法律事務所のIT担当者の日記"></a>
+		</div>
+		<a href="https://namikoneko.github.io/blog2/"><h1 class="site-title">ある法律事務所のIT担当者の日記</h1></a>
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">postgresql備忘</h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2019-10-06">October 06, 2019</time></span>
+			<section itemprop="entry-text">
+				<p>psql -l　データベース一覧<br />
+createdb データベース名　データベース作成<br />
+dropdb データベース名　データベース削除<br />
+psql データベース名　データベースに接続</p>
+
+<p>help ヘルプが出る<br />
+\? よく使うコマンド<br />
+\l データベース一覧<br />
+\q 終了（quit）</p>
+
+<p>テーブル作成<br />
+create table テーブル名（title varchar(255), body text）;<br />
+\dt すべてのテーブルのスキーマ（data table?）<br />
+\d テーブル名 特定のテーブルのスキーマ</p>
+
+<p>テーブル名の変更<br />
+alter table テーブル名 rename to 新テーブル名</p>
+
+<p>テーブル削除<br />
+drop table テーブル名</p>
+
+<p>外部ファイルのコマンドを実行<br />
+\i ファイル名　インタラクティブではないのに。</p>
+
+<p>レコード挿入<br />
+insert into テーブル名 (title,body) values(&lsquo;hoge&rsquo;,&lsquo;foo&rsquo;);</p>
+
+<p>複数レコードを挿入<br />
+insert into テーブル名 (title,body) values<br />
+(&lsquo;hoge1&rsquo;,&lsquo;foo1&rsquo;),<br />
+(&lsquo;hoge2&rsquo;,&lsquo;foo2&rsquo;),<br />
+(&lsquo;hoge3&rsquo;,&lsquo;foo3&rsquo;);</p>
+
+			</section>
+		</article>
+	</main>
+
+<a href="https://ssl.form-mailer.jp/fms/66b9ce49524954">こちらからブログ主へコメント（メール）できます。</a>
+
+<script>
+  (function() {
+    var cx = '011490956161845048880:zpexlubie9i';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<script async src="https://cse.google.com/cse.js?cx=011490956161845048880:dcc892zqnww"></script>
+<div class="gcse-search"></div>
+
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			
+			
+			
+			<a href="https://github.com/namikoneko/" target="_blank">GitHub</a>
+		</div>
+		<div class="copyright">Copyright &copy; yaguchi All rights reserved.</div>
+	</footer>
+
+</div>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
+
