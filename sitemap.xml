@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://namikoneko.github.io/blog2/posts/diary1911006/</loc>
+    <lastmod>2019-10-06T20:14:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://namikoneko.github.io/blog2/posts/postgresql/</loc>
+    <lastmod>2019-10-06T12:16:37+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://namikoneko.github.io/blog2/posts/heroku/</loc>
     <lastmod>2019-10-06T10:49:46+09:00</lastmod>
   </url>
@@ -33,13 +43,13 @@
   
   <url>
     <loc>https://namikoneko.github.io/blog2/tags/</loc>
-    <lastmod>2019-10-06T10:49:46+09:00</lastmod>
+    <lastmod>2019-10-06T20:14:52+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://namikoneko.github.io/blog2/posts/</loc>
-    <lastmod>2019-10-06T10:49:46+09:00</lastmod>
+    <lastmod>2019-10-06T20:14:52+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -50,7 +60,7 @@
   
   <url>
     <loc>https://namikoneko.github.io/blog2/</loc>
-    <lastmod>2019-10-06T10:49:46+09:00</lastmod>
+    <lastmod>2019-10-06T20:14:52+09:00</lastmod>
     <priority>0</priority>
   </url>
   

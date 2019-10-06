@@ -7,8 +7,62 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <copyright>yaguchi All rights reserved.</copyright>
-    <lastBuildDate>Sun, 06 Oct 2019 10:49:46 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 06 Oct 2019 20:14:52 +0900</lastBuildDate>
     <atom:link href="https://namikoneko.github.io/blog2/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>日記191006</title>
+      <link>https://namikoneko.github.io/blog2/posts/diary1911006/</link>
+      <pubDate>Sun, 06 Oct 2019 20:14:52 +0900</pubDate>
+      
+      <guid>https://namikoneko.github.io/blog2/posts/diary1911006/</guid>
+      <description>&lt;p&gt;苦労して，herokuでpostgresqlを使ったflaskアプリを表示させることに成功した。&lt;/p&gt;
+
+&lt;p&gt;sinatraにも興味が出て調べたが，flaskで十分なのでは。&lt;br /&gt;
+マイグレーションを使えるようだが，テーブルを頻繁に変更することもないし。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>postgresql備忘</title>
+      <link>https://namikoneko.github.io/blog2/posts/postgresql/</link>
+      <pubDate>Sun, 06 Oct 2019 12:16:37 +0900</pubDate>
+      
+      <guid>https://namikoneko.github.io/blog2/posts/postgresql/</guid>
+      <description>&lt;p&gt;psql -l　データベース一覧&lt;br /&gt;
+createdb データベース名　データベース作成&lt;br /&gt;
+dropdb データベース名　データベース削除&lt;br /&gt;
+psql データベース名　データベースに接続&lt;/p&gt;
+
+&lt;p&gt;help ヘルプが出る&lt;br /&gt;
+\? よく使うコマンド&lt;br /&gt;
+\l データベース一覧&lt;br /&gt;
+\q 終了（quit）&lt;/p&gt;
+
+&lt;p&gt;テーブル作成&lt;br /&gt;
+create table テーブル名（title varchar(255), body text）;&lt;br /&gt;
+\dt すべてのテーブルのスキーマ（data table?）&lt;br /&gt;
+\d テーブル名 特定のテーブルのスキーマ&lt;/p&gt;
+
+&lt;p&gt;テーブル名の変更&lt;br /&gt;
+alter table テーブル名 rename to 新テーブル名&lt;/p&gt;
+
+&lt;p&gt;テーブル削除&lt;br /&gt;
+drop table テーブル名&lt;/p&gt;
+
+&lt;p&gt;外部ファイルのコマンドを実行&lt;br /&gt;
+\i ファイル名　インタラクティブではないのに。&lt;/p&gt;
+
+&lt;p&gt;レコード挿入&lt;br /&gt;
+insert into テーブル名 (title,body) values(&amp;lsquo;hoge&amp;rsquo;,&amp;lsquo;foo&amp;rsquo;);&lt;/p&gt;
+
+&lt;p&gt;複数レコードを挿入&lt;br /&gt;
+insert into テーブル名 (title,body) values&lt;br /&gt;
+(&amp;lsquo;hoge1&amp;rsquo;,&amp;lsquo;foo1&amp;rsquo;),&lt;br /&gt;
+(&amp;lsquo;hoge2&amp;rsquo;,&amp;lsquo;foo2&amp;rsquo;),&lt;br /&gt;
+(&amp;lsquo;hoge3&amp;rsquo;,&amp;lsquo;foo3&amp;rsquo;);&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>heroku備忘</title>
@@ -35,6 +89,25 @@ git commit -m&amp;rdquo;1st commit&amp;rdquo;&lt;br /&gt;
 heroku create &amp;ldquo;myapp191006&amp;rdquo;（リモートの紐づけもされる）&lt;br /&gt;
 git push heroku master&lt;br /&gt;
 heroku open&lt;/p&gt;
+
+&lt;p&gt;アプリをコマンドで削除する場合&lt;br /&gt;
+heroku apps:destroy &amp;ndash;app (app name)&lt;/p&gt;
+
+&lt;p&gt;datasetをpip installするときは，psycopg2もpip installする。&lt;br /&gt;
+そうしないとエラーになる。&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;heroku pg:psql&lt;/code&gt;で，そのディレクトリに紐付いたアプリに紐付いたデータベースに接続できる&lt;/p&gt;
+
+&lt;p&gt;sql文は，大文字でなければダメらしい&lt;/p&gt;
+
+&lt;p&gt;heroku pg:psql コマンドで接続できる。&lt;/p&gt;
+
+&lt;p&gt;公式サイトによると，以下で，ユーザーパスワードなどの接続情報が取得できる
+&lt;a href=&#34;https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-python&#34;&gt;https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-python&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import os
+DATABASE_URL = os.environ[&#39;DATABASE_URL&#39;]
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
